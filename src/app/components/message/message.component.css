@@ -1,0 +1,69 @@
+.chatmessage{
+    background-color: #f7cf1b;
+    color:#1d68a1;
+    padding: 0.5rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    max-width: 90%;
+    width: auto;
+}
+.usermessage > .chatmessage{
+    background-color: #1d68a1;
+    color: white;
+    margin-right: 5%;
+    justify-self: flex-end;
+}
+.messagecontainer{
+    display:flex;
+    justify-content: flex-start;
+  } 
+.messagecontainer.usermessage{
+    justify-content: flex-end;
+  }
+.imgbot{
+  background-repeat: no-repeat;
+  width: 10%;
+  height: 10%;
+  border-radius: 100%;
+}
+.imguser{
+  background-repeat: no-repeat;
+    width: 10%;
+    height: 10%;
+    border-radius: 100%;
+}
+@media only screen and (min-device-width: 320px) 
+and (max-device-width: 340px) 
+and (-webkit-min-device-pixel-ratio: 2){
+  #chatbotarea{
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr ;
+    grid-template-areas:"chatarea";
+  } 
+}
+@media only screen and (min-device-width: 350px) 
+and (max-device-width: 370px) 
+and (-webkit-min-device-pixel-ratio: 2){
+  #chatbotarea{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:"chatarea";
+  }
+}
+@media only screen and (min-device-width: 375px) 
+and (max-device-width: 667px) 
+and (-webkit-min-device-pixel-ratio: 2){
+#chatbotarea{
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:"chatarea";
+  }
+}
+@media only screen and (max-device-width: 700px){
+  #chatbotarea{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:"chatarea";
+  }
+}
